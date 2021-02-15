@@ -2,6 +2,12 @@
 
 import { Navbar, NavbarBrand } from 'reactstrap';
 
+
+
+import Menu from './components/MenuComponent';
+
+
+
 import './App.css';
 import { Component } from 'react';
 
@@ -12,11 +18,12 @@ class App extends Component {//Component es una clase de componente
   render(){//Metodo de renderizado
     return (
       <div className="App">
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+        <Navbar className="App" dark color="primary">
+          <div className="container Green">
+            <NavbarBrand className="Red" href="/">Ristorante Con Fusion</NavbarBrand>
           </div>
         </Navbar>
+        <Menu />
       </div>
     );
   }
